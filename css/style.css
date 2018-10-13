@@ -1,0 +1,41 @@
+body {
+  background: linear-gradient(#fd4088, #fc75a8, #ff7cae, #d329fd);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+  color: gray;
+  text-align: center;
+}
+.box-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4%;
+}
+.box {
+  margin: 2%;
+  background: white;
+  width: 30%;
+  height: 195px;
+  border: 1px solid #d6d6d6;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  transition: .2s all;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+}
+.box-wrap:hover .box {
+  filter: blur(3px);
+  opacity: .5;
+  transform: scale(.98);
+  box-shadow: none;
+}
+.box-wrap:hover .box:hover {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.125);
+}
